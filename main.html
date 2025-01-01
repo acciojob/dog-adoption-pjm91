@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-	<h1>Learn More About Dog Breeds</h1>
-    <ul>
-        <li>
-            <a href="https://en.wikipedia.org/wiki/Golden_Retriever" target="_blank">
-                <img src="https://via.placeholder.com/200?text=Golden+Retriever" alt="Golden Retriever" />
-            </a>
-        </li>
-        <li>
-            <a href="https://en.wikipedia.org/wiki/Poodle" target="_blank">
-                <img src="https://via.placeholder.com/200?text=Poodle" alt="Poodle" />
-            </a>
-        </li>
-    </ul>
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      
+  
+    </style>
+  </head>
+  <body>
+     <div class="container">
+       <h1>Dog Adoption Application</h1>
+       <form action="/submit-application" method="post">
+         <label for="name">Name</label>
+         <input id="name" name="name" type="text" placeholder="Name" required>
+         
+         <label for="phone">Phone Number</label>
+         <input id="phone" name="phone" type="text" placeholder="Phone Number" required>
+         
+         <label for="address">Address</label>
+         <input id="address" name="address" type="text" placeholder="Address" required>
+         
+         <input id="checkbox" name="name" type="checkbox" placeholder="Name" value="Have you ever lived with a Dog before?" required>
+         
+         <label for="multiSelect">Please select your preferred breeds</label>
+         <select id="multiSelect" type="select">
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+         </select>
+         
+         <input type="submit" value="Submit" id="submit">
+       </form>
+     </div>
+  </body>
 </html>
